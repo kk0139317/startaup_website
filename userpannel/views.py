@@ -26,3 +26,13 @@ def Contact(request):
         return redirect("/")
     else:
         return render(request, 'userpannel/contact.html', data)
+    
+def Team(request):
+    return render(request, 'userpannel/team.html',{'title':"Team Memeber"})
+
+
+def Blog(request):
+    return render(request, 'userpannel/blog.html',{'title':"Blog"})
+
+def Detail(request):
+    return render(request, 'userpannel/detail.html', {'title':"Blog Detal"})
