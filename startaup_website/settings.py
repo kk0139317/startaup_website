@@ -82,14 +82,16 @@ WSGI_APPLICATION = 'startaup_website.wsgi.application'
 # }
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "OPTIONS": {
-            "service": "my_service",
-            "passfile": ".my_pgpass",
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'apnauser',
+        'PASSWORD': 'kundan1121',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
